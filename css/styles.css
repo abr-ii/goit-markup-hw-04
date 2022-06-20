@@ -338,11 +338,6 @@ gap: 30px;
 border: 1px solid var(--focus-hover-color);
 }
 
-.clients-list-link {
-    width: 170px;
-    height: 92px;
-}
-
 .clients-icon-svg {
     width: 170px;
     height: 92px;
@@ -455,11 +450,6 @@ background-color: var(--accent-color)
     padding: 12px;
     fill: var(--white-color)
 }
-
-/*.footer-list-social-svg:hover,
-.footer-list-social-svg:focus {
-    fill: var(--white-color);
-}*/
 
 
 
