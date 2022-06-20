@@ -331,11 +331,12 @@ gap: 30px;
     border-radius: 4px;
     background-color: var(--white-color);
     border: 1px solid var(--grey-icons-AFB1B8);
+    color: var(--focus-hover-color);
 }
 
 .button-clients-list:hover,
 .button-clients-list:focus {
-border: 1px solid var(--focus-hover-color);
+border: 1px solid var(--focus-hover-color)
 }
 
 .clients-icon-svg {
@@ -345,9 +346,8 @@ border: 1px solid var(--focus-hover-color);
     fill: var(--grey-icons-AFB1B8);
 }
 
-.clients-icon-svg:hover,
-.clients-icon-svg:focus {
-    fill: var(--focus-hover-color);
+.clients-icon-svg:hover {
+    fill: currentColor;
 }
 
 .description-team {
