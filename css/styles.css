@@ -185,7 +185,6 @@ color: var(--focus-hover-color);
     text-align: center;
     padding: 200px 0;
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
@@ -208,7 +207,7 @@ color: var(--focus-hover-color);
     margin-bottom: 10px;
 }
 
-.button-studio-list {
+.box-studio-list {
     display: flex;
     margin: 0 0 30px 0;
     padding: 25px 100px;
@@ -233,9 +232,7 @@ color: var(--focus-hover-color);
     padding-bottom: 94px;
 }
 
-.our-work-title,
-.team-title,
-.clients-title{
+.title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -278,77 +275,70 @@ color: var(--focus-hover-color);
 }
 
 .team-social-list {
-    display: inline-flex;
-    margin-right: 32px;
-    margin-left: 32px;
-}
-
-.team-social-list-item {
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
+    gap: 10px;
 }
 
-.team-social-list-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.button-team-social-list {
+.team-social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     background-color: var(--white-color);
-    color: var(--white-color);
+    color: var(--grey-icons-AFB1B8);
+    border-radius: 50%;
 }
 
-.button-team-social-list:focus,
-.button-team-social-list:hover {
+.team-social-list-link:hover,
+.team-social-list-link:focus {
     background-color: var(--focus-hover-color);
     color: var(--white-color);
 }
 
 .team-list-svg {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    fill: var(--grey-icons-AFB1B8)
+    fill: currentColor
 }
-
-
-.team-list-svg:hover {
-    fill: var(--white-color);
-}
-
 
 
 .clients-list {
-gap: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.button-clients-list{
+.clients-list-item {
+    width: calc(100% / 6);
+    
+} 
+
+.clients-list-link{
     display: flex;
-    box-sizing: border-box;
-    width: 170px;
+    align-items: center;
+    justify-content: center;
     height: 92px;
+    cursor: pointer;
     border-radius: 4px;
     background-color: var(--white-color);
     border: 1px solid var(--grey-icons-AFB1B8);
+    color: var(--grey-icons-AFB1B8);
+}
+
+.clients-list-link:focus,
+.clients-list-link:hover {
+    border:1px solid var(--focus-hover-color);
     color: var(--focus-hover-color);
 }
 
-.button-clients-list:hover,
-.button-clients-list:focus {
-border: 1px solid var(--focus-hover-color)
-}
 
 .clients-icon-svg {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-    fill: var(--grey-icons-AFB1B8);
-}
-
-.clients-icon-svg:hover {
     fill: currentColor;
 }
+
+
 
 .description-team {
     padding: 30px 0;
@@ -376,7 +366,6 @@ border: 1px solid var(--focus-hover-color)
 
 .footer-contacts-boxes {
     display: flex;
-    margin-left: 215px;
 }
 
 .address{
@@ -419,38 +408,33 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-social-list {
-    display: inline-flex;
-    margin-right: 32px;
-}
-
-.footer-social-list-item {
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
+    gap: 10px;
 }
 
-.footer-social-list-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.button-footer-social-list {
+.footer-social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+    border-radius: 50%;
 }
 
-.button-footer-social-list:hover,
-.button-footer-social-list:focus {
-background-color: var(--accent-color)
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+    background-color: var(--focus-hover-color);
+    color: var(--white-color);
 }
 
-
-.footer-list-social-svg {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    fill: var(--white-color)
+.footer-list-svg {
+    fill: currentColor
 }
-
 
 
 
@@ -514,7 +498,7 @@ background-color: var(--accent-color)
     margin: 15px;
     flex-basis: calc(100% / 3 - 30px);
 }
-.projects-list-item:hover {
+.projects-list-link:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
